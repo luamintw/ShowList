@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/amin.luthoughtworks.com/.dotnet/store/|arch|/|tfm|",
+      "/Users/amin.luthoughtworks.com/.nuget/packages"
+    ]
+  }
+}

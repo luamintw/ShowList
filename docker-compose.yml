@@ -1,0 +1,39 @@
+
+services:
+  
+  dynamo-db:
+    command: "-jar DynamoDBLocal.jar -sharedDb -optimizeDbBeforeStartup -dbPath ./data"
+    image: "amazon/dynamodb-local:latest"
+    container_name: dynamodb-local
+    expose:
+      - 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./docker/dynamodb:/home/dynamodblocal/data"
+    working_dir: /home/dynamodblocal 
+
+  show-service:
+    image: show.service
+    expose:
+      - 6666
+    build:
+      context: .
+      dockerfile: ShowList.Service/Dockerfile
+    container_name: show-service
+    ports:
+      - "6666:6666"
+    links:
+      - "dynamo-db:dynamodb-local"
+
+  show-api:
+    image: show.api
+    build:
+      context: .
+      dockerfile: ShowList.Api/Dockerfile
+    container_name: show-bff
+    ports:
+      - "5001:5001"
+    links:
+      - "show-service"
+  

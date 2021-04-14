@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowList.Api", "ShowList.Api\ShowList.Api.csproj", "{16C1C46D-1B4A-4D4F-9C90-B1F57A0BBD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowList.Service", "ShowList.Service\ShowList.Service.csproj", "{D7809EF3-61FC-415A-9EE1-00806C5A9A09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16C1C46D-1B4A-4D4F-9C90-B1F57A0BBD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C1C46D-1B4A-4D4F-9C90-B1F57A0BBD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C1C46D-1B4A-4D4F-9C90-B1F57A0BBD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C1C46D-1B4A-4D4F-9C90-B1F57A0BBD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7809EF3-61FC-415A-9EE1-00806C5A9A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7809EF3-61FC-415A-9EE1-00806C5A9A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7809EF3-61FC-415A-9EE1-00806C5A9A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7809EF3-61FC-415A-9EE1-00806C5A9A09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
